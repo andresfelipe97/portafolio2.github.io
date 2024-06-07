@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'roboto',sans-serif;
+    margin: 0;
+}
+
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.5em;}
+ul{list-style:none;}
+li{font-size: 1.5em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color: blue;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: blue;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blue;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blue;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(/MEDIA/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+
+#hero h1{
+    color: white;
+}
+
+
+#sobreMi P{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#sobreMi .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#proyectos{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#proyectos .container{
+    padding: 100px 0px;
+}
+
+#proyectos h2{
+    margin: 0;
+    font-size: 3.2em;
+}
+
+#proyectos p{
+    display: none;
+}
+
+#proyectos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 60px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) 
+    ,url(/MEDIA/generador-de-paletas-de-colores.jpg);
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)) 
+    ,url(/MEDIA/juego-del-ahorcado.png);
+}
+
+
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)) 
+    ,url(/MEDIA/lista-de-tareas.jpg);
+}
+
+
+#habilidades .container{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#habilidades h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#habilidades  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#habilidades img{
+    height: 100px;
+    height: 100px;
+    padding-right: 10PX;
+    margin: 60PX;
+}
+
+
+#trabajar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 40vh;
+}
+
+#contacto li{
+    padding: 10px;
+}
+
+
+footer{
+    background-color: rgb(230, 230,230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+@media(min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #sobreMi .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #sobreMi .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align:initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    #sobreMi p{
+        text-align: center;
+    }
+
+    #sobreMi .img-container{
+        background-image:url(/MEDIA/banner2.png);
+        background-size: cover;
+        background-position: center center;
+        width: 500px;
+        width: 400px;
+    }
+    
+    
+    #proyectos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #proyectos .programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #proyectos h3{
+        margin-top: 0;
+    }
+
+    #proyectos .programas .carta{
+        padding: 50px;
+        background-size: 100% 190px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50, 1);
+        box-shadow: 2PX 2PX 10PX rgba(0, 0, 0, 0.5);
+    }
+
+
+
+    .carta:first-child{
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ) 
+        ,url(/MEDIA/generador-de-paletas-de-colores.jpg);
+    }
+    
+    .carta:nth-child(2){
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)) 
+        ,url(/MEDIA/juegos-del-ahorca2);
+    }
+    
+    
+    .carta:nth-child(3){
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)) 
+        ,url(/MEDIA/lista-de-tareas.jpg);
+    }
+
+    #habilidades{
+
+    }
+
+    #habilidades .container{
+        text-align: initial;
+    }
+
+
+    footer .container
+    {
+    justify-content: flex-end;
+    }
+
+
+}
+
